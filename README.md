@@ -1,2 +1,2 @@
-# Mobile-CI-iOS-Example-
+# Mobile-CI-iOS-Example
 Example iOS application for mobile CI.
