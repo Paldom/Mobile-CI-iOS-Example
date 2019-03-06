@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MobileCI
+
+  Created by Domonkos Pal
+  Copyright © 2019. Domonkos Pal. All rights reserved.
+*/
+
+login_username_placeholder = "Username";
+login_password_placeholder = "Password";
+login_login_button_title = "Log In";
+login_response_success = "Successful log in";
+login_response_fail = "Log in failed";

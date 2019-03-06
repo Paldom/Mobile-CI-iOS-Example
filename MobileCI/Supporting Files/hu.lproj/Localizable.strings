@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MobileCI
+
+  Created by Domonkos Pal
+  Copyright © 2019. Domonkos Pal. All rights reserved.
+*/
+
+login_username_placeholder = "Felhasználónév";
+login_password_placeholder = "Jelszó";
+login_login_button_title = "Belépés";
+login_response_success = "Sikeres bejelentkezés";
+login_response_fail = "Sikertelen bejelentkezés";
