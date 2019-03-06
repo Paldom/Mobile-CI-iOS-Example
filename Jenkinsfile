@@ -10,11 +10,6 @@ pipeline {
         sh 'git submodule update --init --recursive'
       }
     }
-    stage('Build') {
-      steps {
-        sh './gradlew clean assembleDebug'
-      }
-    }
     stage('Mock tests') {
       steps {
         sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCI" --output_types html --output_directory reports_mock'
