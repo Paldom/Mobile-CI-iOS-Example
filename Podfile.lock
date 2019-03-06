@@ -1,0 +1,92 @@
+PODS:
+  - Action (3.8.0):
+    - RxCocoa (~> 4.3.0)
+    - RxSwift (~> 4.3.0)
+  - Alamofire (4.8.1)
+  - Cucumberish (1.3.0)
+  - IBLocalizable (1.3.0)
+  - Localize-Swift (2.0.0)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - "NSObject+Rx (4.4.1)":
+    - RxSwift (~> 4.3)
+  - Result (4.1.0)
+  - RxAtomic (4.4.1)
+  - RxBlocking (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
+  - RxTest (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
+  - SwiftLint (0.30.1)
+  - Swinject (2.5.0)
+  - SwinjectAutoregistration (2.5.1):
+    - Swinject (~> 2.5)
+  - SwinjectStoryboard (2.1.0):
+    - Swinject (~> 2.5)
+
+DEPENDENCIES:
+  - Action (~> 3.8.0)
+  - Cucumberish
+  - IBLocalizable (~> 1.3.0)
+  - Localize-Swift (~> 2.0)
+  - Moya/RxSwift (~> 12.0.1)
+  - "NSObject+Rx (~> 4.4.1)"
+  - RxBlocking (~> 4.4.1)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - RxTest (~> 4.4.1)
+  - SwiftLint
+  - Swinject (~> 2.5.0)
+  - SwinjectAutoregistration (~> 2.5.0)
+  - SwinjectStoryboard (~> 2.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Action
+    - Alamofire
+    - Cucumberish
+    - IBLocalizable
+    - Localize-Swift
+    - Moya
+    - "NSObject+Rx"
+    - Result
+    - RxAtomic
+    - RxBlocking
+    - RxCocoa
+    - RxSwift
+    - RxTest
+    - SwiftLint
+    - Swinject
+    - SwinjectAutoregistration
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Action: 2275d04a407ecaf46a58d58a304388a28155a0a1
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Cucumberish: 76f542be7b62b1a01ebc6f968be3e002f9403931
+  IBLocalizable: bebcf04d98f422a2544f2b000d19387dfe8c317b
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  RxTest: f8e548755ca3c7502dc41c7d3b28802c90115a38
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  SwinjectAutoregistration: f72bf894cbd2ee4a9153e00fa5208e93fb44d283
+  SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
+
+PODFILE CHECKSUM: e55be0bc3ba13ca7aa5e3fa30b81ca8735902e72
+
+COCOAPODS: 1.5.3

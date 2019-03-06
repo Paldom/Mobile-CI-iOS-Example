@@ -1,0 +1,3 @@
+[submodule "MobileCIUITests/Features"]
+	path = MobileCIUITests/Features
+	url = https://github.com/Paldom/Mobile-CI-Gherkin
