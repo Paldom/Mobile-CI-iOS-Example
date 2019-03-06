@@ -10,6 +10,11 @@ pipeline {
         sh 'git submodule update --init --recursive'
       }
     }
+    stage('Pod install') {
+      steps {
+        sh 'pod install'
+      }
+    }
     stage('Mock tests') {
       steps {
         sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCI" --output_types html --output_directory reports_mock'
