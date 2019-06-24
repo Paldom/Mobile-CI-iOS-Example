@@ -29,7 +29,23 @@ platform :ios do
     tmp_version_number_filename.gsub! ".", "_"
     @version_number_filename = tmp_version_number_filename
     @git_hash = last_git_commit[:abbreviated_commit_hash]
+    @keychain =  "#{CONFIG::PROJECT_NAME}-#{@version_number_filename}-build-#{@build_number}-git-#{@git_hash}-keychain"
   end 
+
+  before_all do |lane, options|
+    build_setup
+    xcode_select "/Applications/Xcode.app"
+    clear_derived_data
+    create_keychain(name: @keychain, password: ENV["MATCH_PASSWORD"], unlock: true, timeout: 3600, default_keychain: false)
+  end
+  
+  after_all do |lane, options|
+    delete_keychain(name: @keychain)
+  end
+  
+  error do |lane, exception, options|
+    delete_keychain(name: @keychain)
+  end
 
   desc "Install pod dependencies"
   lane :install_pods do
@@ -48,9 +64,9 @@ platform :ios do
   desc "Fetch certificates & profiles"
   lane :fetch_certificates do
     CONFIG::ENVIRONMENT.each do |key, env|
-      match(app_identifier: env[:bundle_id], type: "development", readonly: true)
-      match(app_identifier: env[:bundle_id], type: "adhoc", readonly: true)
-      match(app_identifier: env[:bundle_id], type: "appstore", readonly: true)
+      match(app_identifier: env[:bundle_id], type: "development", readonly: true, keychain_name: @keychain, keychain_password: ENV["MATCH_PASSWORD"])
+      match(app_identifier: env[:bundle_id], type: "adhoc", readonly: true, keychain_name: @keychain, keychain_password: ENV["MATCH_PASSWORD"])
+      match(app_identifier: env[:bundle_id], type: "appstore", readonly: true, keychain_name: @keychain, keychain_password: ENV["MATCH_PASSWORD"])
     end
   end
 
@@ -59,8 +75,6 @@ platform :ios do
     
     env = CONFIG::ENVIRONMENT[options[:env] || :prod]
     scheme = env[:scheme]
-
-    build_setup
 
     run_tests(
       workspace: @xcworkspace,
@@ -78,7 +92,6 @@ platform :ios do
     env = CONFIG::ENVIRONMENT[options[:env] || :prod]
 
     fetch_certificates
-    build_setup
 
     bundle_id = env[:bundle_id]
     scheme = env[:scheme]
@@ -86,7 +99,7 @@ platform :ios do
     output_folder = "builds/adhoc/"
     output_file = "#{scheme}-#{@version_number_filename}-build-#{@build_number}-git-#{@git_hash}"
 
-    sh "rm -rf #{output_folder}"
+    sh "rm -rf ../#{output_folder}"
 
     increment_build_number(build_number: @build_number)
 
@@ -118,7 +131,6 @@ platform :ios do
     options_env = CONFIG::ENVIRONMENT[options[:env] || :prod]
 
     fetch_certificates
-    build_setup
 
     bundle_id = options_env[:bundle_id]
     scheme = options_env[:scheme]
@@ -126,7 +138,7 @@ platform :ios do
     output_folder = "builds/appstore/"
     output_file = "#{scheme}-#{@version_number_filename}-build-#{@build_number}-git-#{@git_hash}"
 
-    sh "rm -rf #{output_folder}"
+    sh "rm -rf ../#{output_folder}"
 
     increment_build_number(build_number: @build_number)
 
