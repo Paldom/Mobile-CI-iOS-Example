@@ -12,7 +12,15 @@ import RxSwift
 import RxTest
 import RxBlocking
 
+#if MOCK
+@testable import MobileCI_MOCK
+#elseif DEV
+@testable import MobileCI_DEV
+#elseif TEST
+@testable import MobileCI_TEST
+#else
 @testable import MobileCI
+#endif
 
 class MobileCITests: XCTestCase {
     var viewModel: LoginViewModelType!

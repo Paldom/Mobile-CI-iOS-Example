@@ -48,6 +48,16 @@
                ReferencedContainer = "container:MobileCI.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6779FC7C22993BE40065EC2E"
+               BuildableName = "MobileCITests2.xctest"
+               BlueprintName = "MobileCITests2"
+               ReferencedContainer = "container:MobileCI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

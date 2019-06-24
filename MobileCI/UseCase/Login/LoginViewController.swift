@@ -9,6 +9,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Fabric
+import Crashlytics
 
 class LoginViewController: UIViewController {
 
@@ -35,6 +37,14 @@ class LoginViewController: UIViewController {
             .disposed(by: rx.disposeBag)
         
         loginButton.rx.action = viewModel.loginAction()
+        
+        let longTapGesture = UILongPressGestureRecognizer()
+        longTapGesture.minimumPressDuration = 1.0
+        longTapGesture.rx.event.bind(onNext: { _ in
+            Crashlytics.sharedInstance().crash()
+        }).disposed(by: rx.disposeBag)
+        responseLabel.isUserInteractionEnabled = true
+        responseLabel.addGestureRecognizer(longTapGesture)
         
         viewModel.result
             .bind(to: responseLabel.rx.text)

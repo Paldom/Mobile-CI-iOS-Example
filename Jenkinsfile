@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Mock tests') {
       steps {
-        sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCI" --output_types html --output_directory reports_mock'
+        sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCIMock" --output_types html --output_directory reports_mock'
         archiveArtifacts(artifacts: 'reports_mock/**/*.*', fingerprint: true)
       }
     }
@@ -26,7 +26,7 @@ pipeline {
           branch "develop/*" 
       }
       steps {
-        sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCIMock" --output_types html --output_directory reports'
+        sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCI" --output_types html --output_directory reports'
         archiveArtifacts(artifacts: 'reports/**/*.*', fingerprint: true)
       }
     }
@@ -37,20 +37,39 @@ pipeline {
         }
       }
     }
-    stage('Deploy fabric') {
+    stage('Build & upload AdHoc with Mock, Dev config') {
       when { 
         branch "develop/*" 
       }
       steps {
-        sh 'echo "TODO: FABRIC"'
+        sh 'fastlane build_and_upload_adhoc_env env:mock'
+        sh 'fastlane build_and_upload_adhoc_env env:dev'
       }
     }
-    stage('Deploy beta') {
+    stage('Build & deploy Beta with Dev config') {
+      when { 
+        branch "develop/*"  
+      }
+      steps {
+        sh 'fastlane build_and_upload_appstore_env env:dev'
+      }
+    }
+    stage('Build & upload AdHoc with Test, Prod') {
       when { 
         branch "release/*" 
       }
       steps {
-        sh 'echo "TODO: BETA DEPLOY"'
+        sh 'fastlane build_and_upload_adhoc_env env:test'
+        sh 'fastlane build_and_upload_adhoc_env env:prod'
+      }
+    }
+    stage('Build & deploy Beta with Test, Prod config') {
+      when { 
+        branch "release/*" 
+      }
+      steps {
+        sh 'fastlane build_and_upload_appstore_env env:test'
+        sh 'fastlane build_and_upload_appstore_env env:prod'
       }
     }
   }

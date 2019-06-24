@@ -15,6 +15,9 @@ import Localize_Swift
 import IBLocalizable
 import Swinject
 import SwinjectStoryboard
+import Firebase
+import Fabric
+import Crashlytics
 
 // swiftlint:disable line_length colon
 
@@ -34,6 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     ]
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        FirebaseApp.configure()
         
         let assembler = Assembler.init(container: container)
         assembler.apply(assemblies: assemblies)

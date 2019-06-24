@@ -10,14 +10,146 @@
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 
+# Environment configurations
+require './config.rb'
+
 # Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
+update_fastlane
 
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+
+  desc "Set up build parameters"
+  lane :build_setup do 
+    @xcworkspace = CONFIG::PROJECT_NAME + ".xcworkspace"
+    @build_number = number_of_commits
+    @version_number = get_version_number
+    tmp_version_number_filename = get_version_number
+    tmp_version_number_filename.gsub! ".", "_"
+    @version_number_filename = tmp_version_number_filename
+    @git_hash = last_git_commit[:abbreviated_commit_hash]
+  end 
+
+  desc "Install pod dependencies"
+  lane :install_pods do
+    cocoapods
   end
+
+  desc "Init certificates & profiles"
+  lane :init_certificates do
+    CONFIG::ENVIRONMENT.each do |key, env|
+      match(app_identifier: env[:bundle_id], type: "development")
+      match(app_identifier: env[:bundle_id], type: "adhoc")
+      match(app_identifier: env[:bundle_id], type: "appstore")
+    end
+  end
+
+  desc "Fetch certificates & profiles"
+  lane :fetch_certificates do
+    CONFIG::ENVIRONMENT.each do |key, env|
+      match(app_identifier: env[:bundle_id], type: "development", readonly: true)
+      match(app_identifier: env[:bundle_id], type: "adhoc", readonly: true)
+      match(app_identifier: env[:bundle_id], type: "appstore", readonly: true)
+    end
+  end
+
+  desc "Run tests"
+  lane :run_tests_env do |options|
+    sh "rm -rf reports_testing"
+    run_tests(
+      workspace: xcworkspace,
+      scheme: CONFIG::ENVIRONMENT[options[:env] || :mock][:scheme],
+      output_types: "html,junit,json-compilation-database",
+      output_directory: "reports_testing",
+      destination: "platform=iOS Simulator,name=iPhone X,OS=12.1",
+      derived_data_path: "./DerivedData",
+      code_coverage: true
+    )
+  end
+
+  desc "Build AdHoc artifacts and upload to artifactory"
+  lane :build_and_upload_adhoc_env do |options|
+
+    env = CONFIG::ENVIRONMENT[options[:env] || :prod]
+
+    fetch_certificates
+    build_setup
+
+    bundle_id = env[:bundle_id]
+    scheme = env[:scheme]
+    gsp_file = env[:gsp_file]
+    output_folder = "builds/adhoc/"
+    output_file = "#{scheme}-#{@version_number_filename}-build-#{@build_number}-git-#{@git_hash}"
+
+    sh "rm -rf #{output_folder}"
+
+    increment_build_number(build_number: @build_number)
+
+    gym(
+      scheme: scheme,
+      workspace: @xcworkspace,
+      output_directory: output_folder,
+      output_name: output_file + ".ipa",
+      export_method: "ad-hoc",
+      export_options: {
+        provisioningProfiles: { 
+          bundle_id => "match AdHoc " + bundle_id
+        }
+      },
+      clean: true
+    )
+
+    package_location = bundle_id.clone
+    package_location.gsub! ".", "/"
+
+    sh "jfrog rt u \"../builds/adhoc/(*)\" mobile-ci-ios/#{package_location}/#{@version_number}/#{@build_number}/adhoc/{1} --build-name=#{scheme} --build-number=#{@build_number} --props=\"git=#{@git_hash}\""
+
+
+  end
+
+  desc "Build AppStore artifacts and upload to artifactory & testflight"
+  lane :build_and_upload_appstore_env do |options|
+
+    options_env = CONFIG::ENVIRONMENT[options[:env] || :prod]
+
+    fetch_certificates
+    build_setup
+
+    bundle_id = options_env[:bundle_id]
+    scheme = options_env[:scheme]
+    gsp_file = options_env[:gsp_file]
+    output_folder = "builds/appstore/"
+    output_file = "#{scheme}-#{@version_number_filename}-build-#{@build_number}-git-#{@git_hash}"
+
+    sh "rm -rf #{output_folder}"
+
+    increment_build_number(build_number: @build_number)
+
+    gym(
+      scheme: scheme,
+      workspace: @xcworkspace,
+      output_directory: output_folder,
+      output_name: output_file + ".ipa",
+      export_method: "app-store",
+      clean: true
+    )
+
+    package_location = bundle_id.clone
+    package_location.gsub! ".", "/"
+
+    sh "jfrog rt u \"../builds/appstore/(*)\" mobile-ci-ios/#{package_location}/#{@version_number}/#{@build_number}/appstore/{1} --build-name=#{scheme} --build-number=#{@build_number} --props=\"git=#{@git_hash}\""
+
+    upload_symbols_to_crashlytics(
+      gsp_path: 'MobileCI/Supporting Files/GoogleService-Info/' + gsp_file
+    )
+
+    upload_to_testflight(
+      app_identifier: bundle_id,
+      skip_waiting_for_build_processing: true
+    )
+
+  end
+
+
 end

@@ -74,4 +74,16 @@ fastlane/test_output
 reports
 reports_mock/
 reports_live/
+reports_testing/
 sonar-reports/
+compile_commands.json
+xcodebuild.log
+fastlane/keys.sh
+
+# Firebase
+
+MobileCI/Supporting Files/GoogleService-Info
+GoogleService-Info*.plist
+compile_commands.json
+compile_commands.json
+compile_commands.json

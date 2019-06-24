@@ -1,12 +1,18 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '10.0'
 
+# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+use_frameworks!
+
 target 'MobileCI' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
 
   # Lint
   pod 'SwiftLint'
+  
+  # Analytics
+  pod 'Fabric', '~> 1.10.1'
+  pod 'Crashlytics', '~> 3.13.1'
+  pod 'Firebase/Core'
   
   # Rx
   pod 'RxSwift', '~> 4.0'
@@ -33,9 +39,9 @@ target 'MobileCI' do
     pod 'RxBlocking', '~> 4.4.1'
   end
 
-  target 'MobileCIUITests' do
+end
+
+target 'MobileCIUITests' do
     # Pods for testing
     pod 'Cucumberish'
-  end
-
 end

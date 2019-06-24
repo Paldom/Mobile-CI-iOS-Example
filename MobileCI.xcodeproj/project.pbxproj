@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04FFCCC8C7769FDC19AD7F2F /* Pods_MobileCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5FBE36D6D9A6E5DE8F8B13 /* Pods_MobileCITests.framework */; };
-		260E0D3B4EAEA76B30918DD7 /* Pods_MobileCI_MobileCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9ED16B0B07C89E0BE2F167 /* Pods_MobileCI_MobileCIUITests.framework */; };
+		676C960922A8124F00E1FCB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676C960522A8124F00E1FCB8 /* GoogleService-Info.plist */; };
+		676C960A22A8124F00E1FCB8 /* GoogleService-Info-test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676C960622A8124F00E1FCB8 /* GoogleService-Info-test.plist */; };
+		676C960B22A8124F00E1FCB8 /* GoogleService-Info-dev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676C960722A8124F00E1FCB8 /* GoogleService-Info-dev.plist */; };
+		676C960C22A8124F00E1FCB8 /* GoogleService-Info-mock.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676C960822A8124F00E1FCB8 /* GoogleService-Info-mock.plist */; };
 		67936A8A220DE42200D362E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67936A89220DE42200D362E9 /* AppDelegate.swift */; };
 		67936A8C220DE42200D362E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67936A8B220DE42200D362E9 /* ViewController.swift */; };
 		67936A8F220DE42200D362E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67936A8D220DE42200D362E9 /* Main.storyboard */; };
@@ -33,7 +35,9 @@
 		67EEF4A2221439EC000747FB /* LoginScreenSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EEF4A1221439EC000747FB /* LoginScreenSteps.swift */; };
 		67EEF4A422143CE4000747FB /* NavigationSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EEF4A322143CE4000747FB /* NavigationSteps.swift */; };
 		67EEF4A622143D25000747FB /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EEF4A522143D25000747FB /* Navigation.swift */; };
-		990FC8063A3FAEAC2D207089 /* Pods_MobileCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA645163DE509CEAD17DE9F /* Pods_MobileCI.framework */; };
+		8BD6891DDC0A353A52B914AB /* Pods_MobileCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49209A9B8F271819E7441E4 /* Pods_MobileCITests.framework */; };
+		E2255A420C088CCA06FEC0F6 /* Pods_MobileCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19132AD1699675C475E6B955 /* Pods_MobileCIUITests.framework */; };
+		FF9B05DE6FE84BC8DB256E43 /* Pods_MobileCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCDAFA1758C1B79653A490B /* Pods_MobileCI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +58,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B5FBE36D6D9A6E5DE8F8B13 /* Pods_MobileCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2141969A23F59411E8DE4626 /* Pods-MobileCI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCI/Pods-MobileCI.debug.xcconfig"; sourceTree = "<group>"; };
-		6103D5D398E11DAA271974DD /* Pods-MobileCI-MobileCIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI-MobileCIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCI-MobileCIUITests/Pods-MobileCI-MobileCIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		092EB376FDDF48601CF17335 /* Pods-MobileCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.release.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.release.xcconfig"; sourceTree = "<group>"; };
+		0985A376F3159E1D512CA190 /* Pods-MobileCITests.release-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.release-test.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.release-test.xcconfig"; sourceTree = "<group>"; };
+		118D791E2C96E8C372194491 /* Pods-MobileCITests.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.debug-dev.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		19132AD1699675C475E6B955 /* Pods_MobileCIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileCIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6B24256BF760003C3EC99B /* Pods-MobileCI.release-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.release-test.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.release-test.xcconfig"; sourceTree = "<group>"; };
+		2CBC85B70AF910BB4885AC1B /* Pods-MobileCITests.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.release-dev.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.release-dev.xcconfig"; sourceTree = "<group>"; };
+		528FA3B2E53C6D8C5308D959 /* Pods-MobileCI.debug-mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.debug-mock.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.debug-mock.xcconfig"; sourceTree = "<group>"; };
+		676C960522A8124F00E1FCB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		676C960622A8124F00E1FCB8 /* GoogleService-Info-test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-test.plist"; sourceTree = "<group>"; };
+		676C960722A8124F00E1FCB8 /* GoogleService-Info-dev.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-dev.plist"; sourceTree = "<group>"; };
+		676C960822A8124F00E1FCB8 /* GoogleService-Info-mock.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-mock.plist"; sourceTree = "<group>"; };
 		67936A86220DE42200D362E9 /* MobileCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67936A89220DE42200D362E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67936A8B220DE42200D362E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,12 +101,26 @@
 		67EEF4A1221439EC000747FB /* LoginScreenSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenSteps.swift; sourceTree = "<group>"; };
 		67EEF4A322143CE4000747FB /* NavigationSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSteps.swift; sourceTree = "<group>"; };
 		67EEF4A522143D25000747FB /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
-		7CA645163DE509CEAD17DE9F /* Pods_MobileCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9422B57D481A646026B047D5 /* Pods-MobileCITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCITests/Pods-MobileCITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9BBB17EB21E5AFD85C6BB588 /* Pods-MobileCI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCI/Pods-MobileCI.release.xcconfig"; sourceTree = "<group>"; };
-		9E9ED16B0B07C89E0BE2F167 /* Pods_MobileCI_MobileCIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileCI_MobileCIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B96DFD15A21CB0CF005621B6 /* Pods-MobileCI-MobileCIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI-MobileCIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCI-MobileCIUITests/Pods-MobileCI-MobileCIUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DBC9D9ED767D74B2590C2E45 /* Pods-MobileCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileCITests/Pods-MobileCITests.release.xcconfig"; sourceTree = "<group>"; };
+		77F98A4EF2B730ED47EFC71A /* Pods-MobileCI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.release.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.release.xcconfig"; sourceTree = "<group>"; };
+		79C7719BE7430BFF9F981847 /* Pods-MobileCIUITests.debug-mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.debug-mock.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.debug-mock.xcconfig"; sourceTree = "<group>"; };
+		7A2A93B88F07C1BBF8CF3D37 /* Pods-MobileCITests.debug-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.debug-test.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.debug-test.xcconfig"; sourceTree = "<group>"; };
+		85FD42BC41D8EB47EA75CA04 /* Pods-MobileCIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		889028CA4CEC36B1A03D72E1 /* Pods-MobileCI.release-mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.release-mock.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.release-mock.xcconfig"; sourceTree = "<group>"; };
+		8B0369BEB790B64FAF2DC52A /* Pods-MobileCI.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.release-dev.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.release-dev.xcconfig"; sourceTree = "<group>"; };
+		8BFF7B1082FF12146F6FBAC9 /* Pods-MobileCIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.release.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6FAEB91510EFB09E15E8247 /* Pods-MobileCIUITests.release-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.release-test.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.release-test.xcconfig"; sourceTree = "<group>"; };
+		A9F0B9509ABDAAE92FA7426E /* Pods-MobileCITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAE3A5928D69801DDC6E13F6 /* Pods-MobileCIUITests.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.release-dev.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.release-dev.xcconfig"; sourceTree = "<group>"; };
+		B3601999AACF9192849C395E /* Pods-MobileCIUITests.debug-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.debug-test.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.debug-test.xcconfig"; sourceTree = "<group>"; };
+		B51924B4FD362E5CDBB563EE /* Pods-MobileCI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.debug.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.debug.xcconfig"; sourceTree = "<group>"; };
+		C8BF0DDB204D693BAD1E100B /* Pods-MobileCITests.release-mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.release-mock.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.release-mock.xcconfig"; sourceTree = "<group>"; };
+		D2855C72EB570FEE24BEC8B0 /* Pods-MobileCI.debug-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.debug-test.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.debug-test.xcconfig"; sourceTree = "<group>"; };
+		D49209A9B8F271819E7441E4 /* Pods_MobileCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42C33222FEC80A939DBF03E /* Pods-MobileCITests.debug-mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCITests.debug-mock.xcconfig"; path = "Target Support Files/Pods-MobileCITests/Pods-MobileCITests.debug-mock.xcconfig"; sourceTree = "<group>"; };
+		EA8032E55A4C09AEC9999E4D /* Pods-MobileCIUITests.release-mock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.release-mock.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.release-mock.xcconfig"; sourceTree = "<group>"; };
+		EABEF9C31E0AEF37CD400678 /* Pods-MobileCI.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCI.debug-dev.xcconfig"; path = "Target Support Files/Pods-MobileCI/Pods-MobileCI.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		EBCDAFA1758C1B79653A490B /* Pods_MobileCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA98DD09CB1CEE7E662E9C2A /* Pods-MobileCIUITests.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileCIUITests.debug-dev.xcconfig"; path = "Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests.debug-dev.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990FC8063A3FAEAC2D207089 /* Pods_MobileCI.framework in Frameworks */,
+				FF9B05DE6FE84BC8DB256E43 /* Pods_MobileCI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04FFCCC8C7769FDC19AD7F2F /* Pods_MobileCITests.framework in Frameworks */,
+				8BD6891DDC0A353A52B914AB /* Pods_MobileCITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,24 +144,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				260E0D3B4EAEA76B30918DD7 /* Pods_MobileCI_MobileCIUITests.framework in Frameworks */,
+				E2255A420C088CCA06FEC0F6 /* Pods_MobileCIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0747C1326BD46806A4C6CBA4 /* Pods */ = {
+		676C95FC22A8105F00E1FCB8 /* GoogleService-Info */ = {
 			isa = PBXGroup;
 			children = (
-				2141969A23F59411E8DE4626 /* Pods-MobileCI.debug.xcconfig */,
-				9BBB17EB21E5AFD85C6BB588 /* Pods-MobileCI.release.xcconfig */,
-				6103D5D398E11DAA271974DD /* Pods-MobileCI-MobileCIUITests.debug.xcconfig */,
-				B96DFD15A21CB0CF005621B6 /* Pods-MobileCI-MobileCIUITests.release.xcconfig */,
-				9422B57D481A646026B047D5 /* Pods-MobileCITests.debug.xcconfig */,
-				DBC9D9ED767D74B2590C2E45 /* Pods-MobileCITests.release.xcconfig */,
+				676C960722A8124F00E1FCB8 /* GoogleService-Info-dev.plist */,
+				676C960822A8124F00E1FCB8 /* GoogleService-Info-mock.plist */,
+				676C960622A8124F00E1FCB8 /* GoogleService-Info-test.plist */,
+				676C960522A8124F00E1FCB8 /* GoogleService-Info.plist */,
 			);
-			name = Pods;
+			path = "GoogleService-Info";
 			sourceTree = "<group>";
 		};
 		67936A7D220DE42200D362E9 = {
@@ -146,8 +170,8 @@
 				67936A9D220DE42300D362E9 /* MobileCITests */,
 				67936AA8220DE42300D362E9 /* MobileCIUITests */,
 				67936A87220DE42200D362E9 /* Products */,
-				0747C1326BD46806A4C6CBA4 /* Pods */,
-				76405CCA52CF99136FFE8EDB /* Frameworks */,
+				F88D15C831901C4AC2F14A61 /* Pods */,
+				E8E2F9AC71AEA5A273A9085A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +226,7 @@
 		67936AB8220DEFD100D362E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				676C95FC22A8105F00E1FCB8 /* GoogleService-Info */,
 				67936A90220DE42300D362E9 /* Assets.xcassets */,
 				67936A95220DE42300D362E9 /* Info.plist */,
 				67936AC4220DF1E500D362E9 /* Localizable.strings */,
@@ -289,14 +314,45 @@
 			path = StepsDefinition;
 			sourceTree = "<group>";
 		};
-		76405CCA52CF99136FFE8EDB /* Frameworks */ = {
+		E8E2F9AC71AEA5A273A9085A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CA645163DE509CEAD17DE9F /* Pods_MobileCI.framework */,
-				9E9ED16B0B07C89E0BE2F167 /* Pods_MobileCI_MobileCIUITests.framework */,
-				1B5FBE36D6D9A6E5DE8F8B13 /* Pods_MobileCITests.framework */,
+				EBCDAFA1758C1B79653A490B /* Pods_MobileCI.framework */,
+				D49209A9B8F271819E7441E4 /* Pods_MobileCITests.framework */,
+				19132AD1699675C475E6B955 /* Pods_MobileCIUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F88D15C831901C4AC2F14A61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B51924B4FD362E5CDBB563EE /* Pods-MobileCI.debug.xcconfig */,
+				D2855C72EB570FEE24BEC8B0 /* Pods-MobileCI.debug-test.xcconfig */,
+				EABEF9C31E0AEF37CD400678 /* Pods-MobileCI.debug-dev.xcconfig */,
+				528FA3B2E53C6D8C5308D959 /* Pods-MobileCI.debug-mock.xcconfig */,
+				77F98A4EF2B730ED47EFC71A /* Pods-MobileCI.release.xcconfig */,
+				1F6B24256BF760003C3EC99B /* Pods-MobileCI.release-test.xcconfig */,
+				8B0369BEB790B64FAF2DC52A /* Pods-MobileCI.release-dev.xcconfig */,
+				889028CA4CEC36B1A03D72E1 /* Pods-MobileCI.release-mock.xcconfig */,
+				A9F0B9509ABDAAE92FA7426E /* Pods-MobileCITests.debug.xcconfig */,
+				7A2A93B88F07C1BBF8CF3D37 /* Pods-MobileCITests.debug-test.xcconfig */,
+				118D791E2C96E8C372194491 /* Pods-MobileCITests.debug-dev.xcconfig */,
+				E42C33222FEC80A939DBF03E /* Pods-MobileCITests.debug-mock.xcconfig */,
+				092EB376FDDF48601CF17335 /* Pods-MobileCITests.release.xcconfig */,
+				0985A376F3159E1D512CA190 /* Pods-MobileCITests.release-test.xcconfig */,
+				2CBC85B70AF910BB4885AC1B /* Pods-MobileCITests.release-dev.xcconfig */,
+				C8BF0DDB204D693BAD1E100B /* Pods-MobileCITests.release-mock.xcconfig */,
+				85FD42BC41D8EB47EA75CA04 /* Pods-MobileCIUITests.debug.xcconfig */,
+				B3601999AACF9192849C395E /* Pods-MobileCIUITests.debug-test.xcconfig */,
+				FA98DD09CB1CEE7E662E9C2A /* Pods-MobileCIUITests.debug-dev.xcconfig */,
+				79C7719BE7430BFF9F981847 /* Pods-MobileCIUITests.debug-mock.xcconfig */,
+				8BFF7B1082FF12146F6FBAC9 /* Pods-MobileCIUITests.release.xcconfig */,
+				A6FAEB91510EFB09E15E8247 /* Pods-MobileCIUITests.release-test.xcconfig */,
+				AAE3A5928D69801DDC6E13F6 /* Pods-MobileCIUITests.release-dev.xcconfig */,
+				EA8032E55A4C09AEC9999E4D /* Pods-MobileCIUITests.release-mock.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,12 +362,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67936AAE220DE42300D362E9 /* Build configuration list for PBXNativeTarget "MobileCI" */;
 			buildPhases = (
-				9E49EA42BDB5BAABD4D8AA8F /* [CP] Check Pods Manifest.lock */,
+				BF1AF77321AF2269E766C2B8 /* [CP] Check Pods Manifest.lock */,
 				67936AB7220DEE5F00D362E9 /* [Run Script] Swiftlint */,
+				67104A8822B0296C00515570 /* [Run Script] Firebase environment setup */,
 				67936A82220DE42200D362E9 /* Sources */,
 				67936A83220DE42200D362E9 /* Frameworks */,
 				67936A84220DE42200D362E9 /* Resources */,
-				FDF15764A8E290E0E81725DD /* [CP] Embed Pods Frameworks */,
+				67104A8922B04F2E00515570 /* [Run Script] Fabric */,
+				CD5E558E6ECAC77AE9541787 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,11 +384,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67936AB1220DE42300D362E9 /* Build configuration list for PBXNativeTarget "MobileCITests" */;
 			buildPhases = (
-				30C99CB36FD28482E7C80E79 /* [CP] Check Pods Manifest.lock */,
+				BB1EA66F4DB11AD6D0C53474 /* [CP] Check Pods Manifest.lock */,
 				67936A96220DE42300D362E9 /* Sources */,
 				67936A97220DE42300D362E9 /* Frameworks */,
 				67936A98220DE42300D362E9 /* Resources */,
-				374E7378734E334E6817366D /* [CP] Embed Pods Frameworks */,
+				CA99618898E6A40EEE38C0A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,11 +404,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67936AB4220DE42300D362E9 /* Build configuration list for PBXNativeTarget "MobileCIUITests" */;
 			buildPhases = (
-				8FFFF5B502190DECEBA3E270 /* [CP] Check Pods Manifest.lock */,
+				7C952701AE559116A00CD27E /* [CP] Check Pods Manifest.lock */,
 				67936AA1220DE42300D362E9 /* Sources */,
 				67936AA2220DE42300D362E9 /* Frameworks */,
 				67936AA3220DE42300D362E9 /* Resources */,
-				790DE4E5AAFFEA7DA8E81438 /* [CP] Embed Pods Frameworks */,
+				A26DF703AED301C8D2D2C5CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,7 +426,7 @@
 		67936A7E220DE42200D362E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Domonkos Pal";
 				TargetAttributes = {
@@ -377,11 +435,13 @@
 					};
 					67936A99220DE42300D362E9 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Manual;
 						TestTargetID = 67936A85220DE42200D362E9;
 					};
 					67936AA4220DE42300D362E9 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+						ProvisioningStyle = Manual;
 						TestTargetID = 67936A85220DE42200D362E9;
 					};
 				};
@@ -415,9 +475,13 @@
 				67936AD4220E117600D362E9 /* .swiftlint.yml in Resources */,
 				67936A94220DE42300D362E9 /* LaunchScreen.storyboard in Resources */,
 				67936AC2220DF1E500D362E9 /* Localizable.strings in Resources */,
+				676C960A22A8124F00E1FCB8 /* GoogleService-Info-test.plist in Resources */,
+				676C960B22A8124F00E1FCB8 /* GoogleService-Info-dev.plist in Resources */,
+				676C960C22A8124F00E1FCB8 /* GoogleService-Info-mock.plist in Resources */,
 				67936A91220DE42300D362E9 /* Assets.xcassets in Resources */,
 				67936AC8220DF42400D362E9 /* Login.storyboard in Resources */,
 				67936A8F220DE42200D362E9 /* Main.storyboard in Resources */,
+				676C960922A8124F00E1FCB8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,47 +504,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30C99CB36FD28482E7C80E79 /* [CP] Check Pods Manifest.lock */ = {
+		67104A8822B0296C00515570 /* [Run Script] Firebase environment setup */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+			);
+			name = "[Run Script] Firebase environment setup";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MobileCITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\nif [ \"${PRODUCT_BUNDLE_IDENTIFIER}\" == \"hu.dpal-demo.MobileCI\" ]; then\ncp -r \"${PROJECT_DIR}/MobileCI/Supporting Files/GoogleService-Info/GoogleService-Info.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ \"${PRODUCT_BUNDLE_IDENTIFIER}\" == \"hu.dpal-demo.MobileCI.test\" ]; then\ncp -r \"${PROJECT_DIR}/MobileCI/Supporting Files/GoogleService-Info/GoogleService-Info-test.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ \"${PRODUCT_BUNDLE_IDENTIFIER}\" == \"hu.dpal-demo.MobileCI.dev\" ]; then\ncp -r \"${PROJECT_DIR}/MobileCI/Supporting Files/GoogleService-Info/GoogleService-Info-dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ \"${PRODUCT_BUNDLE_IDENTIFIER}\" == \"hu.dpal-demo.MobileCI.mock\" ]; then\ncp -r \"${PROJECT_DIR}/MobileCI/Supporting Files/GoogleService-Info/GoogleService-Info-mock.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n\n";
 		};
-		374E7378734E334E6817366D /* [CP] Embed Pods Frameworks */ = {
+		67104A8922B04F2E00515570 /* [Run Script] Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MobileCITests/Pods-MobileCITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[Run Script] Fabric";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCITests/Pods-MobileCITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "${PODS_ROOT}/Fabric/run\n";
 		};
 		67936AB7220DEE5F00D362E9 /* [Run Script] Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -496,76 +555,86 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nif which ${PODS_ROOT}/SwiftLint/swiftlint >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
-		790DE4E5AAFFEA7DA8E81438 /* [CP] Embed Pods Frameworks */ = {
+		7C952701AE559116A00CD27E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MobileCI-MobileCIUITests/Pods-MobileCI-MobileCIUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/IBLocalizable/IBLocalizable.framework",
-				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
-				"${BUILT_PRODUCTS_DIR}/Cucumberish/Cucumberish.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBLocalizable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cucumberish.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCI-MobileCIUITests/Pods-MobileCI-MobileCIUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8FFFF5B502190DECEBA3E270 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MobileCI-MobileCIUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MobileCIUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9E49EA42BDB5BAABD4D8AA8F /* [CP] Check Pods Manifest.lock */ = {
+		A26DF703AED301C8D2D2C5CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cucumberish/Cucumberish.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cucumberish.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileCIUITests/Pods-MobileCIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB1EA66F4DB11AD6D0C53474 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileCITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF1AF77321AF2269E766C2B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MobileCI-checkManifestLockResult.txt",
 			);
@@ -574,15 +643,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FDF15764A8E290E0E81725DD /* [CP] Embed Pods Frameworks */ = {
+		CA99618898E6A40EEE38C0A6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MobileCI/Pods-MobileCI-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MobileCITests/Pods-MobileCITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileCITests/Pods-MobileCITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5E558E6ECAC77AE9541787 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileCI/Pods-MobileCI-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IBLocalizable/IBLocalizable.framework",
 				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -593,11 +693,15 @@
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBLocalizable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -608,10 +712,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectAutoregistration.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileCI/Pods-MobileCI-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileCI/Pods-MobileCI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -698,6 +803,798 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		672976E022989D4200EC3181 /* Debug-MOCK */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-MOCK";
+		};
+		672976E122989D4200EC3181 /* Debug-MOCK */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528FA3B2E53C6D8C5308D959 /* Pods-MobileCI.debug-mock.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-MOCK";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI.mock";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(SUFFIX)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUFFIX = "-MOCK";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-MOCK";
+		};
+		672976E222989D4200EC3181 /* Debug-MOCK */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42C33222FEC80A939DBF03E /* Pods-MobileCITests.debug-mock.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = MobileCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DMOCK";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "-MOCK";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
+			};
+			name = "Debug-MOCK";
+		};
+		672976E322989D4200EC3181 /* Debug-MOCK */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C7719BE7430BFF9F981847 /* Pods-MobileCIUITests.debug-mock.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = MobileCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileCIUITests/MobileCIUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileCI;
+			};
+			name = "Debug-MOCK";
+		};
+		672976E822989D6300EC3181 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-DEV";
+		};
+		672976E922989D6300EC3181 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EABEF9C31E0AEF37CD400678 /* Pods-MobileCI.debug-dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-DEV";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI.dev";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(SUFFIX)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUFFIX = "-DEV";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-DEV";
+		};
+		672976EA22989D6300EC3181 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 118D791E2C96E8C372194491 /* Pods-MobileCITests.debug-dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = MobileCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DDEV";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "-DEV";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
+			};
+			name = "Debug-DEV";
+		};
+		672976EB22989D6300EC3181 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA98DD09CB1CEE7E662E9C2A /* Pods-MobileCIUITests.debug-dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = MobileCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileCIUITests/MobileCIUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileCI;
+			};
+			name = "Debug-DEV";
+		};
+		672976EC22989D6E00EC3181 /* Debug-TEST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-TEST";
+		};
+		672976ED22989D6E00EC3181 /* Debug-TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2855C72EB570FEE24BEC8B0 /* Pods-MobileCI.debug-test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-TEST";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI.test";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(SUFFIX)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUFFIX = "-TEST";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-TEST";
+		};
+		672976EE22989D6E00EC3181 /* Debug-TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A2A93B88F07C1BBF8CF3D37 /* Pods-MobileCITests.debug-test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = MobileCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DTEST";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "-TEST";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
+			};
+			name = "Debug-TEST";
+		};
+		672976EF22989D6E00EC3181 /* Debug-TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3601999AACF9192849C395E /* Pods-MobileCIUITests.debug-test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = MobileCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileCIUITests/MobileCIUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileCI;
+			};
+			name = "Debug-TEST";
+		};
+		672976F022989D7D00EC3181 /* Release-MOCK */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-MOCK";
+		};
+		672976F122989D7D00EC3181 /* Release-MOCK */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 889028CA4CEC36B1A03D72E1 /* Pods-MobileCI.release-mock.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-MOCK";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI.mock";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(SUFFIX)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore hu.dpal-demo.MobileCI.mock";
+				SUFFIX = "-MOCK";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-MOCK";
+		};
+		672976F222989D7D00EC3181 /* Release-MOCK */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8BF0DDB204D693BAD1E100B /* Pods-MobileCITests.release-mock.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = MobileCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DMOCK";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "-MOCK";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
+			};
+			name = "Release-MOCK";
+		};
+		672976F322989D7D00EC3181 /* Release-MOCK */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8032E55A4C09AEC9999E4D /* Pods-MobileCIUITests.release-mock.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = MobileCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileCIUITests/MobileCIUITests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileCI;
+			};
+			name = "Release-MOCK";
+		};
+		672976F422989D8700EC3181 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-DEV";
+		};
+		672976F522989D8700EC3181 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B0369BEB790B64FAF2DC52A /* Pods-MobileCI.release-dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-DEV";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI.dev";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(SUFFIX)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore hu.dpal-demo.MobileCI.dev";
+				SUFFIX = "-DEV";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-DEV";
+		};
+		672976F622989D8700EC3181 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CBC85B70AF910BB4885AC1B /* Pods-MobileCITests.release-dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = MobileCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DDEV";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "-DEV";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
+			};
+			name = "Release-DEV";
+		};
+		672976F722989D8700EC3181 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE3A5928D69801DDC6E13F6 /* Pods-MobileCIUITests.release-dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = MobileCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileCIUITests/MobileCIUITests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileCI;
+			};
+			name = "Release-DEV";
+		};
+		672976F822989D9B00EC3181 /* Release-TEST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-TEST";
+		};
+		672976F922989D9B00EC3181 /* Release-TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6B24256BF760003C3EC99B /* Pods-MobileCI.release-test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-TEST";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI.test";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(SUFFIX)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore hu.dpal-demo.MobileCI.test";
+				SUFFIX = "-TEST";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-TEST";
+		};
+		672976FA22989D9B00EC3181 /* Release-TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0985A376F3159E1D512CA190 /* Pods-MobileCITests.release-test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = MobileCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -DTEST";
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "-TEST";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
+			};
+			name = "Release-TEST";
+		};
+		672976FB22989D9B00EC3181 /* Release-TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6FAEB91510EFB09E15E8247 /* Pods-MobileCIUITests.release-test.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = NO;
+				INFOPLIST_FILE = MobileCIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileCIUITests/MobileCIUITests-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileCI;
+			};
+			name = "Release-TEST";
+		};
 		67936AAC220DE42300D362E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -818,18 +1715,25 @@
 		};
 		67936AAF220DE42300D362E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2141969A23F59411E8DE4626 /* Pods-MobileCI.debug.xcconfig */;
+			baseConfigurationReference = B51924B4FD362E5CDBB563EE /* Pods-MobileCI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B65G7ZYG9Y;
-				INFOPLIST_FILE = "$(SRCROOT)/MobileCI/Supporting Files/Info.plist";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCI;
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUFFIX = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -837,18 +1741,24 @@
 		};
 		67936AB0220DE42300D362E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BBB17EB21E5AFD85C6BB588 /* Pods-MobileCI.release.xcconfig */;
+			baseConfigurationReference = 77F98A4EF2B730ED47EFC71A /* Pods-MobileCI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B65G7ZYG9Y;
-				INFOPLIST_FILE = "$(SRCROOT)/MobileCI/Supporting Files/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = NH8WPPSQJN;
+				INFOPLIST_FILE = "MobileCI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.dpal-demo.MobileCI";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)$(SUFFIX)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore hu.dpal-demo.MobileCI";
+				SUFFIX = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -856,11 +1766,11 @@
 		};
 		67936AB2220DE42300D362E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9422B57D481A646026B047D5 /* Pods-MobileCITests.debug.xcconfig */;
+			baseConfigurationReference = A9F0B9509ABDAAE92FA7426E /* Pods-MobileCITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				INFOPLIST_FILE = MobileCITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -869,19 +1779,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI.app/MobileCI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
 			};
 			name = Debug;
 		};
 		67936AB3220DE42300D362E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBC9D9ED767D74B2590C2E45 /* Pods-MobileCITests.release.xcconfig */;
+			baseConfigurationReference = 092EB376FDDF48601CF17335 /* Pods-MobileCITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				INFOPLIST_FILE = MobileCITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -890,19 +1801,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hu.dpal.MobileCITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUFFIX = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI.app/MobileCI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileCI$(SUFFIX).app/MobileCI$(SUFFIX)";
 			};
 			name = Release;
 		};
 		67936AB5220DE42300D362E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6103D5D398E11DAA271974DD /* Pods-MobileCI-MobileCIUITests.debug.xcconfig */;
+			baseConfigurationReference = 85FD42BC41D8EB47EA75CA04 /* Pods-MobileCIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MobileCIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -922,11 +1834,11 @@
 		};
 		67936AB6220DE42300D362E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B96DFD15A21CB0CF005621B6 /* Pods-MobileCI-MobileCIUITests.release.xcconfig */;
+			baseConfigurationReference = 8BFF7B1082FF12146F6FBAC9 /* Pods-MobileCIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = MobileCIUITests/Info.plist;
@@ -951,7 +1863,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67936AAC220DE42300D362E9 /* Debug */,
+				672976EC22989D6E00EC3181 /* Debug-TEST */,
+				672976E822989D6300EC3181 /* Debug-DEV */,
+				672976E022989D4200EC3181 /* Debug-MOCK */,
 				67936AAD220DE42300D362E9 /* Release */,
+				672976F822989D9B00EC3181 /* Release-TEST */,
+				672976F422989D8700EC3181 /* Release-DEV */,
+				672976F022989D7D00EC3181 /* Release-MOCK */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -960,7 +1878,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67936AAF220DE42300D362E9 /* Debug */,
+				672976ED22989D6E00EC3181 /* Debug-TEST */,
+				672976E922989D6300EC3181 /* Debug-DEV */,
+				672976E122989D4200EC3181 /* Debug-MOCK */,
 				67936AB0220DE42300D362E9 /* Release */,
+				672976F922989D9B00EC3181 /* Release-TEST */,
+				672976F522989D8700EC3181 /* Release-DEV */,
+				672976F122989D7D00EC3181 /* Release-MOCK */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -969,7 +1893,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67936AB2220DE42300D362E9 /* Debug */,
+				672976EE22989D6E00EC3181 /* Debug-TEST */,
+				672976EA22989D6300EC3181 /* Debug-DEV */,
+				672976E222989D4200EC3181 /* Debug-MOCK */,
 				67936AB3220DE42300D362E9 /* Release */,
+				672976FA22989D9B00EC3181 /* Release-TEST */,
+				672976F622989D8700EC3181 /* Release-DEV */,
+				672976F222989D7D00EC3181 /* Release-MOCK */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -978,7 +1908,13 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67936AB5220DE42300D362E9 /* Debug */,
+				672976EF22989D6E00EC3181 /* Debug-TEST */,
+				672976EB22989D6300EC3181 /* Debug-DEV */,
+				672976E322989D4200EC3181 /* Debug-MOCK */,
 				67936AB6220DE42300D362E9 /* Release */,
+				672976FB22989D9B00EC3181 /* Release-TEST */,
+				672976F722989D8700EC3181 /* Release-DEV */,
+				672976F322989D7D00EC3181 /* Release-MOCK */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
