@@ -82,8 +82,4 @@ fastlane/keys.sh
 
 # Firebase
 
-MobileCI/Supporting Files/GoogleService-Info
 GoogleService-Info*.plist
-compile_commands.json
-compile_commands.json
-compile_commands.json

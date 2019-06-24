@@ -1,3 +1,6 @@
 [submodule "MobileCIUITests/Features"]
 	path = MobileCIUITests/Features
 	url = https://github.com/Paldom/Mobile-CI-Gherkin
+[submodule "MobileCI/Supporting Files/GoogleService-Info"]
+	path = MobileCI/Supporting Files/GoogleService-Info
+	url = https://github.com/Paldom/Mobile-CI-iOS-Example-GSP.git
