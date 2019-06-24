@@ -56,14 +56,18 @@ platform :ios do
 
   desc "Run tests"
   lane :run_tests_env do |options|
-    sh "rm -rf reports_testing"
+    
+    env = CONFIG::ENVIRONMENT[options[:env] || :prod]
+    scheme = env[:scheme]
+
+    build_setup
+
     run_tests(
-      workspace: xcworkspace,
-      scheme: CONFIG::ENVIRONMENT[options[:env] || :mock][:scheme],
+      workspace: @xcworkspace,
+      scheme: scheme,
       output_types: "html,junit,json-compilation-database",
-      output_directory: "reports_testing",
+      output_directory: "reports_#{options[:env]}",
       destination: "platform=iOS Simulator,name=iPhone X,OS=12.1",
-      derived_data_path: "./DerivedData",
       code_coverage: true
     )
   end

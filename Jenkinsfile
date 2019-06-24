@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Mock tests') {
       steps {
-        sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCIMock" --output_types html --output_directory reports_mock'
+        sh 'fastlane run_tests_env env:mock'
         archiveArtifacts(artifacts: 'reports_mock/**/*.*', fingerprint: true)
       }
     }
@@ -26,7 +26,7 @@ pipeline {
           branch "develop/*" 
       }
       steps {
-        sh 'fastlane scan --workspace "MobileCI.xcworkspace" --scheme "MobileCI" --output_types html --output_directory reports'
+        sh 'fastlane run_tests_env env:prod'
         archiveArtifacts(artifacts: 'reports/**/*.*', fingerprint: true)
       }
     }
