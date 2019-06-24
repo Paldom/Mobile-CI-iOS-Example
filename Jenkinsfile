@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Live tests') {
       when { 
-          branch "develop/*" 
+          branch "release/*" 
       }
       steps {
         sh 'fastlane run_tests_env env:prod'
@@ -39,7 +39,7 @@ pipeline {
     }
     stage('Build & upload AdHoc with Mock, Dev config') {
       when { 
-        branch "develop/*" 
+        branch "develop" 
       }
       steps {
         sh 'fastlane build_and_upload_adhoc_env env:mock'
@@ -48,7 +48,7 @@ pipeline {
     }
     stage('Build & deploy Beta with Dev config') {
       when { 
-        branch "develop/*"  
+        branch "develop"  
       }
       steps {
         sh 'fastlane build_and_upload_appstore_env env:dev'
