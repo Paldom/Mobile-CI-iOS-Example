@@ -27,7 +27,7 @@ pipeline {
       }
       steps {
         sh 'fastlane run_tests_env env:prod'
-        archiveArtifacts(artifacts: 'reports/**/*.*', fingerprint: true)
+        archiveArtifacts(artifacts: 'reports_prod/**/*.*', fingerprint: true)
       }
     }
     stage('Sonar analysis') {
