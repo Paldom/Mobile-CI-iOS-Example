@@ -21,6 +21,11 @@ or alternatively using `brew cask install fastlane`
 fastlane ios build_setup
 ```
 Set up build parameters
+### ios force_delete_keychain
+```
+fastlane ios force_delete_keychain
+```
+Force keychain deletion
 ### ios install_pods
 ```
 fastlane ios install_pods
