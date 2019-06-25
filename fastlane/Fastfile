@@ -68,9 +68,9 @@ platform :ios do
   desc "Init certificates & profiles"
   lane :init_certificates do
     CONFIG::ENVIRONMENT.each do |key, env|
-      match(app_identifier: env[:bundle_id], type: "development")
-      match(app_identifier: env[:bundle_id], type: "adhoc")
-      match(app_identifier: env[:bundle_id], type: "appstore")
+      match(app_identifier: env[:bundle_id], type: "development", keychain_name: @keychain, keychain_password: ENV["MATCH_PASSWORD"])
+      match(app_identifier: env[:bundle_id], type: "adhoc", keychain_name: @keychain, keychain_password: ENV["MATCH_PASSWORD"])
+      match(app_identifier: env[:bundle_id], type: "appstore", keychain_name: @keychain, keychain_password: ENV["MATCH_PASSWORD"])
     end
   end
 
