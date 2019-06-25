@@ -1,4 +1,4 @@
-git_url("https://github.com/Paldom/MobileCI-iOS-certs.git")
+git_url("git@github.com:Paldom/MobileCI-iOS-certs.git")
 
 storage_mode("git")
 
