@@ -99,7 +99,7 @@ platform :ios do
     )
   end
 
-  desc "Build AdHoc artifacts and upload to artifactory"
+  desc "Build AdHoc artifacts and upload to artifactory & firebase"
   lane :build_and_upload_adhoc_env do |options|
 
     env = CONFIG::ENVIRONMENT[options[:env] || :prod]
@@ -141,6 +141,10 @@ platform :ios do
 
     sh "jfrog rt u \"../builds/adhoc/(*)\" mobile-ci-ios/#{package_location}/#{@version_number}/#{@build_number}/adhoc/{1} --build-name=#{scheme} --build-number=#{@build_number} --props=\"git=#{@git_hash}\""
 
+    firebase_app_distribution(
+      app: env[:firebase_app_id],
+      firebase_cli_path: "/usr/local/bin/firebase"
+    )
 
   end
 

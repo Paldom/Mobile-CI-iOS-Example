@@ -12,6 +12,7 @@ pipeline {
     }
     stage('Pod install') {
       steps {
+        sh 'pod repo update'
         sh 'pod install'
       }
     }
@@ -75,7 +76,7 @@ pipeline {
   }
   post {
     always {
-      sh 'echo "TODO: DESTROY"'
+      sh 'echo "Destroy"'
     }
   }
 }
