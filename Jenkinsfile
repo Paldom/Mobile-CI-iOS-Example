@@ -32,6 +32,7 @@ pipeline {
       }
     }
     stage('Sonar analysis') {
+      sh 'fastlane setup_sonar_properties'
       steps {
         withSonarQubeEnv('Sonar') { 
           sh 'run-sonar-swift'

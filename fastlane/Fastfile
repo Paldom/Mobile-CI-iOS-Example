@@ -29,6 +29,7 @@ platform :ios do
     tmp_version_number_filename.gsub! ".", "_"
     @version_number_filename = tmp_version_number_filename
     @git_hash = last_git_commit[:abbreviated_commit_hash]
+    @git_branch = git_branch
     @keychain =  "#{CONFIG::PROJECT_NAME}-fastlane-keychain"
   end 
 
@@ -94,9 +95,18 @@ platform :ios do
       scheme: scheme,
       output_types: "html,junit,json-compilation-database",
       output_directory: "reports_#{options[:env]}",
-      destination: "platform=iOS Simulator,name=iPhone X,OS=12.1",
+      destination: "platform=iOS Simulator,name=iPhone 11,OS=13.1",
       code_coverage: true
     )
+  end
+
+  desc "Setup sonar properties file with proper keys"
+  lane :setup_sonar_properties do |options|
+
+    sonar_props = {}
+    sonar_props["sonar.branch.name"] = @git_branch
+    set_sonar_properties(sonar_props: sonar_props)
+
   end
 
   desc "Build AdHoc artifacts and upload to artifactory & firebase"
