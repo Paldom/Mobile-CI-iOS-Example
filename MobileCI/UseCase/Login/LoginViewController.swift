@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var responseLabel: UILabel!
     
+    @IBOutlet weak var crashLabel: UILabel!
+    
     var viewModel: LoginViewModelType!
     
     override func viewDidLoad() {
@@ -43,8 +45,8 @@ class LoginViewController: UIViewController {
         longTapGesture.rx.event.bind(onNext: { _ in
             Crashlytics.sharedInstance().crash()
         }).disposed(by: rx.disposeBag)
-        responseLabel.isUserInteractionEnabled = true
-        responseLabel.addGestureRecognizer(longTapGesture)
+        crashLabel.isUserInteractionEnabled = true
+        crashLabel.addGestureRecognizer(longTapGesture)
         
         viewModel.result
             .bind(to: responseLabel.rx.text)

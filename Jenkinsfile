@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Mock tests') {
       steps {
-        sh 'fastlane run_tests_env env:mock'
+        sh 'bundle exec fastlane run_tests_env env:mock'
         archiveArtifacts(artifacts: 'reports_mock/**/*.*', fingerprint: true)
       }
     }
@@ -27,13 +27,13 @@ pipeline {
           branch "release/*" 
       }
       steps {
-        sh 'fastlane run_tests_env env:prod'
+        sh 'bundle exec fastlane run_tests_env env:prod'
         archiveArtifacts(artifacts: 'reports_prod/**/*.*', fingerprint: true)
       }
     }
     stage('Sonar analysis') {
       steps {
-        sh 'fastlane setup_sonar_properties'
+        sh 'bundle exec fastlane setup_sonar_properties'
         withSonarQubeEnv('Sonar') { 
           sh 'run-sonar-swift'
         }
@@ -44,8 +44,8 @@ pipeline {
         branch "develop" 
       }
       steps {
-        sh 'fastlane build_and_upload_adhoc_env env:mock'
-        sh 'fastlane build_and_upload_adhoc_env env:dev'
+        sh 'bundle exec fastlane build_and_upload_adhoc_env env:mock'
+        sh 'bundle exec fastlane build_and_upload_adhoc_env env:dev'
       }
     }
     stage('Build & deploy Beta with Dev config') {
@@ -53,7 +53,7 @@ pipeline {
         branch "develop"  
       }
       steps {
-        sh 'fastlane build_and_upload_appstore_env env:dev'
+        sh 'bundle exec fastlane build_and_upload_appstore_env env:dev'
       }
     }
     stage('Build & upload AdHoc with Test, Prod') {
@@ -61,8 +61,8 @@ pipeline {
         branch "release/*" 
       }
       steps {
-        sh 'fastlane build_and_upload_adhoc_env env:test'
-        sh 'fastlane build_and_upload_adhoc_env env:prod'
+        sh 'bundle exec fastlane build_and_upload_adhoc_env env:test'
+        sh 'bundle exec fastlane build_and_upload_adhoc_env env:prod'
       }
     }
     stage('Build & deploy Beta with Test, Prod config') {
@@ -70,8 +70,8 @@ pipeline {
         branch "release/*" 
       }
       steps {
-        sh 'fastlane build_and_upload_appstore_env env:test'
-        sh 'fastlane build_and_upload_appstore_env env:prod'
+        sh 'bundle exec fastlane build_and_upload_appstore_env env:test'
+        sh 'bundle exec fastlane build_and_upload_appstore_env env:prod'
       }
     }
   }

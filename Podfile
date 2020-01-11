@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '13.1'
 
 # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 use_frameworks!
@@ -10,23 +10,23 @@ target 'MobileCI' do
   pod 'SwiftLint'
   
   # Analytics
-  pod 'Fabric', '~> 1.10.1'
-  pod 'Crashlytics', '~> 3.13.1'
+  pod 'Fabric', '~> 1.10.2'
+  pod 'Crashlytics', '~> 3.14.0'
   pod 'Firebase/Core'
   
   # Rx
-  pod 'RxSwift', '~> 4.0'
-  pod 'RxCocoa', '~> 4.0'
-  pod 'Action', '~> 3.8.0'
+  pod 'RxSwift', '~> 4.4'
+  pod 'RxCocoa', '~> 4.4'
+  pod 'Action', '~> 3.11.0'
   pod 'NSObject+Rx', '~> 4.4.1'
   
   # Network
-  pod 'Moya/RxSwift', '~> 12.0.1'
+  pod 'Moya/RxSwift', '~> 13.0'
   
   # Dependency Injection
-  pod 'Swinject', '~> 2.5.0'
-  pod 'SwinjectAutoregistration', '~> 2.5.0'
-  pod 'SwinjectStoryboard', '~> 2.1.0'
+  pod 'Swinject', '~> 2.6.0'
+  pod 'SwinjectAutoregistration', '~> 2.6.0'
+  pod 'SwinjectStoryboard', '~> 2.2.0'
   
   # Locale
   pod 'Localize-Swift', '~> 2.0'
@@ -35,8 +35,8 @@ target 'MobileCI' do
   target 'MobileCITests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'RxTest', '~> 4.4.1'
-    pod 'RxBlocking', '~> 4.4.1'
+    pod 'RxTest', '~> 4.5.0b'
+    pod 'RxBlocking', '~> 4.5.0'
   end
 
 end
