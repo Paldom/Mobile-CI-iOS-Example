@@ -95,7 +95,7 @@ platform :ios do
       scheme: scheme,
       output_types: "html,junit,json-compilation-database",
       output_directory: "reports_#{options[:env]}",
-      destination: "platform=iOS Simulator,name=iPhone 11,OS=13.1",
+      destination: "platform=iOS Simulator,name=iPhone 11,OS=13.3",
       code_coverage: true
     )
   end
