@@ -17,8 +17,8 @@ pipeline {
     }
     stage('Pod install') {
       steps {
-        sh 'bundle exec pod repo update'
-        sh 'bundle exec pod install'
+        sh 'pod repo update'
+        sh 'pod install'
       }
     }
     stage('Mock tests') {
