@@ -10,10 +10,15 @@ pipeline {
         sh 'git submodule update --init --recursive'
       }
     }
+    stage('Bundle install') {
+      steps {
+        sh 'bundle install'
+      }
+    }
     stage('Pod install') {
       steps {
-        sh 'pod repo update'
-        sh 'pod install'
+        sh 'bundle exec pod repo update'
+        sh 'bundle exec pod install'
       }
     }
     stage('Mock tests') {

@@ -35,27 +35,32 @@ Install pod dependencies
 ```
 fastlane ios init_certificates
 ```
-Init certificates & profiles
+Init certificates & profiles
 ### ios fetch_certificates
 ```
 fastlane ios fetch_certificates
 ```
-Fetch certificates & profiles
+Fetch certificates & profiles
 ### ios run_tests_env
 ```
 fastlane ios run_tests_env
 ```
 Run tests
+### ios setup_sonar_properties
+```
+fastlane ios setup_sonar_properties
+```
+Setup sonar properties file with proper keys
 ### ios build_and_upload_adhoc_env
 ```
 fastlane ios build_and_upload_adhoc_env
 ```
-Build AdHoc artifacts and upload to artifactory
+Build AdHoc artifacts and upload to artifactory & firebase
 ### ios build_and_upload_appstore_env
 ```
 fastlane ios build_and_upload_appstore_env
 ```
-Build AppStore artifacts and upload to artifactory & testflight
+Build AppStore artifacts and upload to artifactory & testflight
 
 ----
 
