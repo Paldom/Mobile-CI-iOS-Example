@@ -2,5 +2,5 @@ git_url("git@github.com:Paldom/MobileCI-iOS-certs.git")
 
 storage_mode("git")
 
-username(ENV["APPLE_ID_DPAL"]) # Your Apple Developer Portal username
+username(ENV["APPLE_ID"]) # Your Apple Developer Portal username
 team_id(ENV["TEAM_ID"])

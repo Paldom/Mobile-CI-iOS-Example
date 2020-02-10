@@ -1,5 +1,5 @@
 
-apple_id(ENV["APPLE_ID_DPAL"])  # Your Apple email address
+apple_id(ENV["APPLE_ID"])  # Your Apple email address
 
 team_id(ENV["TEAM_ID"]) # Developer Portal Team ID
 itc_team_id(ENV["ITC_TEAM_ID"])# App Store Connect Team ID
